@@ -15,11 +15,11 @@ extension UIColor {
     }
     
     static var lightPinkTextColor: UIColor {
-        hexStringToUIColor(hex: "6841DA")
+        hexStringToUIColor(hex: "FAEAF4")
     }
 
     static var lightPinkColor: UIColor {
-        hexStringToUIColor(hex: "6841DA")
+        hexStringToUIColor(hex: "FAEAF4")
     }
 }
 

@@ -16,7 +16,9 @@ protocol StartScreenViewModelProtocol {
 class StartScreenViewModel: StartScreenViewModelProtocol {
 
     private let cellViewModels: [ReusableViewModel] = [
-        WavesCellViewModel()
+        WavesCellViewModel(),
+        StartScreenTextCellViewModel(model: .title(text: "Your pocket Git\nProfile")),
+        StartScreenTextCellViewModel(model: .plain(text: "Lorem ipsum dolor sit amet,\nconsectetur adipiscing elit, sed do\neiusmod tempor incididunt ut labore et\ndolore magna aliqua."))
     ]
     
     func navigateToLogin() {}

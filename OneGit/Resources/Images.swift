@@ -12,4 +12,8 @@ extension UIImage {
     static var startScreenTopImage: UIImage {
         UIImage(named: "startScreenTopPreview")!
     }
+
+    static var gitHubLogoImage: UIImage {
+        UIImage(named: "gitHubLogo")!
+    }
 }

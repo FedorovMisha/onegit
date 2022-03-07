@@ -47,6 +47,7 @@ class StartScreenViewController: BaseViewController {
         tableView.dataSource = self
         tableView.delegate = self
         tableView.register(WavesCell.self, forCellReuseIdentifier: WavesCell.identifier)
+        tableView.register(StartScreenTextCell.self, forCellReuseIdentifier: StartScreenTextCell.identifier)
     }
 }
 
@@ -63,4 +64,30 @@ extension StartScreenViewController: UITableViewDataSource, UITableViewDelegate 
         return cell
     }
     
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        if indexPath.row == 0 {
+            animateWaves(cell: cell, duration: 1)
+        } else {
+            animateCell(cell: cell, duration: CGFloat(indexPath.row))
+        }
+    }
+
+    private func animateCell(cell: UITableViewCell, duration: CGFloat) {
+        cell.alpha = 0
+        cell.transform = CGAffineTransform(translationX: -500, y: 0)
+        UIView.animate(withDuration: duration) {
+            cell.alpha = 1
+            cell.transform = CGAffineTransform.identity
+        }
+    }
+
+    private func animateWaves(cell: UITableViewCell, duration: CGFloat) {
+        cell.alpha = 0
+        cell.transform = CGAffineTransform(translationX: 0, y: -500)
+        UIView.animate(withDuration: duration) {
+            cell.transform = CGAffineTransform.identity
+            cell.alpha = 1
+        }
+    }
 }
+
