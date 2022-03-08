@@ -28,6 +28,9 @@
 		4B7AD69E27D6B31900CE0AE7 /* TextStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7AD69D27D6B31900CE0AE7 /* TextStyle.swift */; };
 		4B7AD6A127D6B6A200CE0AE7 /* TextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7AD6A027D6B6A200CE0AE7 /* TextCell.swift */; };
 		4B7AD6A327D6B88C00CE0AE7 /* StartScreenTextCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7AD6A227D6B88C00CE0AE7 /* StartScreenTextCellViewModel.swift */; };
+		4B7AD6A527D7AC5A00CE0AE7 /* ButtonStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7AD6A427D7AC5A00CE0AE7 /* ButtonStyles.swift */; };
+		4B7AD6A827D7AEAB00CE0AE7 /* StartScreenButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7AD6A727D7AEAB00CE0AE7 /* StartScreenButtonCell.swift */; };
+		4B7AD6AA27D7AF8500CE0AE7 /* StartScreenButtonCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7AD6A927D7AF8500CE0AE7 /* StartScreenButtonCellViewModel.swift */; };
 		4BB4430627D68E9B0004F03E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB4430527D68E9B0004F03E /* AppDelegate.swift */; };
 		4BB4430F27D68E9C0004F03E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BB4430E27D68E9C0004F03E /* Assets.xcassets */; };
 		4BB4431227D68E9C0004F03E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BB4431027D68E9C0004F03E /* LaunchScreen.storyboard */; };
@@ -68,6 +71,9 @@
 		4B7AD69D27D6B31900CE0AE7 /* TextStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextStyle.swift; sourceTree = "<group>"; };
 		4B7AD6A027D6B6A200CE0AE7 /* TextCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextCell.swift; sourceTree = "<group>"; };
 		4B7AD6A227D6B88C00CE0AE7 /* StartScreenTextCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScreenTextCellViewModel.swift; sourceTree = "<group>"; };
+		4B7AD6A427D7AC5A00CE0AE7 /* ButtonStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyles.swift; sourceTree = "<group>"; };
+		4B7AD6A727D7AEAB00CE0AE7 /* StartScreenButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScreenButtonCell.swift; sourceTree = "<group>"; };
+		4B7AD6A927D7AF8500CE0AE7 /* StartScreenButtonCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScreenButtonCellViewModel.swift; sourceTree = "<group>"; };
 		4BB4430227D68E9B0004F03E /* OneGit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OneGit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BB4430527D68E9B0004F03E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4BB4430E27D68E9C0004F03E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -240,6 +246,7 @@
 			children = (
 				4BB4433627D69C2B0004F03E /* ImageStyles.swift */,
 				4B7AD69D27D6B31900CE0AE7 /* TextStyle.swift */,
+				4B7AD6A427D7AC5A00CE0AE7 /* ButtonStyles.swift */,
 			);
 			path = Styles;
 			sourceTree = "<group>";
@@ -249,6 +256,7 @@
 			children = (
 				4BB4434027D69DEC0004F03E /* WavesCell.swift */,
 				4B7AD6A027D6B6A200CE0AE7 /* TextCell.swift */,
+				4B7AD6A727D7AEAB00CE0AE7 /* StartScreenButtonCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -267,6 +275,7 @@
 			children = (
 				4BB4433E27D69DBD0004F03E /* WavesCellViewModel.swift */,
 				4B7AD6A227D6B88C00CE0AE7 /* StartScreenTextCellViewModel.swift */,
+				4B7AD6A927D7AF8500CE0AE7 /* StartScreenButtonCellViewModel.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -431,12 +440,15 @@
 				4BB4432927D695960004F03E /* StartScreenNavigator.swift in Sources */,
 				4BB4430627D68E9B0004F03E /* AppDelegate.swift in Sources */,
 				4BB4432E27D699300004F03E /* BaseViewController.swift in Sources */,
+				4B7AD6A527D7AC5A00CE0AE7 /* ButtonStyles.swift in Sources */,
 				4BB4433227D69AD90004F03E /* Images.swift in Sources */,
 				4BB4431E27D691160004F03E /* Navigator.swift in Sources */,
 				4BB4432627D695370004F03E /* StartScreenViewController.swift in Sources */,
 				4BB4433427D69B590004F03E /* Styling.swift in Sources */,
 				4BB4433727D69C2B0004F03E /* ImageStyles.swift in Sources */,
+				4B7AD6AA27D7AF8500CE0AE7 /* StartScreenButtonCellViewModel.swift in Sources */,
 				4BB4433F27D69DBD0004F03E /* WavesCellViewModel.swift in Sources */,
+				4B7AD6A827D7AEAB00CE0AE7 /* StartScreenButtonCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

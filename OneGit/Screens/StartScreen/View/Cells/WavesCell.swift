@@ -44,7 +44,7 @@ class WavesCell: UITableViewCell {
         logoLabel.snp.makeConstraints {
             $0.centerY.equalToSuperview()
             $0.left.equalToSuperview().offset(50)
-            $0.right.lessThanOrEqualTo(gitHubImageView.snp.left).offset(-68)
+            $0.right.lessThanOrEqualTo(gitHubImageView.snp.left).offset(0)
         }
 
         gitHubImageView.snp.makeConstraints {
